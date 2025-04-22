@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wordle"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"/>
+
+    <!-- Текст "Scrambled word" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перемішане слово"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Перемешанное слово -->
+    <TextView
+        android:id="@+id/scrambledWordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rtvehas"
+        android:textSize="30sp"
+        android:padding="16dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вгаданих слів:0"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Поле ввода -->
+    <EditText
+        android:id="@+id/inputWordEditText"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:hint="Введіть слово"
+        android:textSize="24sp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:layout_marginTop="32dp" />
+    <!-- Кнопка для проверки -->
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перевірити"
+        android:textSize="22sp"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="32dp"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/hintButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Підказка"
+        android:textSize="22sp"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="32dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
